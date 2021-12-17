@@ -6,7 +6,7 @@ CREATE TABLE usuarios (
 CREATE TABLE minijuegos (
 	idminijuego tinyint PRIMARY KEY  AUTO_INCREMENT,
 	nombre varchar(50) NOT NULL,
-	preferencia varchar(200) NOT NULL
+	url varchar(200) NOT NULL
 );
 CREATE TABLE preferencias (
 	idminijuego tinyint NOT NULL,

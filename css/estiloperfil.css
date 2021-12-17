@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  background-image: url('https://wallpaperaccess.com/full/1181260.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+div{
+  margin: 20px;
+}
+table{
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: white;
+}
+h1{
+  text-align: center;
+}
+td{
+  text-align: center;
+}
+#salir{
+  background-color: #34C8DB;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

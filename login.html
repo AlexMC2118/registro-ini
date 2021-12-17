@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/estilologin.css">
+  </head>
+  <body>
+  	<div class="login">
+  		<div class="login-screen">
+  			<div class="app-title">
+          <img src="https://www.safa.edu/images/blog/general-actualidad.png">
+  				<h1>Inicio de Sesión</h1>
+  			</div>
+        <form action="autenticartest.php" method="post">
+    			<div class="login-form">
+    				<div class="control-group">
+      				<input type="text" name="correo" class="login-field" value="" placeholder="Correo" id="login-name" required>
+      				<label class="login-field-icon fui-user" for="login-name"></label>
+    				</div>
+    				<div class="control-group">
+      				<input type="password" name="password" class="login-field" placeholder="Contraseña" maxlength="8" id="login-pass" required>
+      				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    				</div>
+            <input type="submit" class="btn btn-primary btn-large btn-block" value="Iniciar sesión">
+    				<a class="login-link" href="registro.php">Registrarse</a>
+    			</div>
+        </form>
+  		</div>
+  	</div>
+  </body>
+</html>

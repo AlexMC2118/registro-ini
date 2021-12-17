@@ -32,7 +32,7 @@
         echo "
               <div style='background-color: #34C8DB; padding: 20px; width: 400px; margin: 0 auto; text-align: center;'>
                 <h2 style='color: red'>¡CONTRASEÑA INCORRECTA!</h2>
-                <a href='exit.php' style='text-decoration: none; color: white;'>SALIR</a>
+                <a href='php/exit.php' style='text-decoration: none; color: white;'>SALIR</a>
               </div>
             ";
       }
@@ -43,7 +43,7 @@
       echo "
             <div style='background-color: #34C8DB; padding: 20px; width: 400px; margin: 0 auto; text-align: center;'>
               <h2 style='color: red'>¡CORREO INCORRECTO!</h2>
-              <a href='exit.php' style='text-decoration: none; color: white;'>SALIR</a>
+              <a href='php/exit.php' style='text-decoration: none; color: white;'>SALIR</a>
             </div>
           ";
     }

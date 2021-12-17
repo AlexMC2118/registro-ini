@@ -23,7 +23,7 @@
                 <label>PREFERENCIAS:</label>
                 <div id="preferencias">
                   <?php
-                    require_once("conectar.php");
+                    require_once("php/conectar.php");
                     if ($stmt = $conn->prepare("SELECT * FROM minijuegos")){
                       $stmt->execute();
                       $stmt->store_result();
@@ -52,7 +52,7 @@
 </html>
 
 <?php
-  //error_reporting(0);
+  error_reporting(0);
 
   if(!strpos($_POST['correo'], "fundacionloyola") ) {
     echo "

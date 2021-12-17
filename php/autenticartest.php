@@ -1,6 +1,6 @@
 <?php
   session_start();
-  require_once("conectar.php");
+  require_once("php/conectar.php");
 
   //VERIFICACION DE ESCRITURA DE DATOS EN EL FORM
 	if ( !isset($_POST['correo'], $_POST['password'])){
@@ -24,7 +24,7 @@
         session_regenerate_id();
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['correo'] = $_POST['correo'];
-        header('Location: perfil.php');
+        header('Location: ./perfil.php');
       }
 
       // SI EL USUARIO EXISTE PERO EL PASSWORD NO COINCIDE IMPRIMIR EN PANTALLA PASSWORD INCORRECTO

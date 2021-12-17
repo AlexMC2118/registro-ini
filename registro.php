@@ -44,7 +44,7 @@
           </td>
         </tr>
         <tr id="salir">
-          <td><a href="exit.php">SALIR</a></td>
+          <td><a href="php/exit.php">SALIR</a></td>
         </tr>
       </tbody>
     </table>

@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td id="salir">
-          <a href='exit.php'>SALIR</a>
+          <a href='php/exit.php'>SALIR</a>
         </td>
       </tr>
     </table>

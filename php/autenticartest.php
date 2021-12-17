@@ -1,6 +1,6 @@
 <?php
   session_start();
-  require_once("php/conectar.php");
+  require_once("conectar.php");
 
   //VERIFICACION DE ESCRITURA DE DATOS EN EL FORM
 	if ( !isset($_POST['correo'], $_POST['password'])){
@@ -24,7 +24,7 @@
         session_regenerate_id();
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['correo'] = $_POST['correo'];
-        header('Location: ./perfil.php');
+        header('Location: ../perfil.php');
       }
 
       // SI EL USUARIO EXISTE PERO EL PASSWORD NO COINCIDE IMPRIMIR EN PANTALLA PASSWORD INCORRECTO
@@ -32,7 +32,7 @@
         echo "
               <div style='background-color: #34C8DB; padding: 20px; width: 400px; margin: 0 auto; text-align: center;'>
                 <h2 style='color: red'>¡CONTRASEÑA INCORRECTA!</h2>
-                <a href='php/exit.php' style='text-decoration: none; color: white;'>SALIR</a>
+                <a href='exit.php' style='text-decoration: none; color: white;'>SALIR</a>
               </div>
             ";
       }
@@ -43,7 +43,7 @@
       echo "
             <div style='background-color: #34C8DB; padding: 20px; width: 400px; margin: 0 auto; text-align: center;'>
               <h2 style='color: red'>¡CORREO INCORRECTO!</h2>
-              <a href='php/exit.php' style='text-decoration: none; color: white;'>SALIR</a>
+              <a href='exit.php' style='text-decoration: none; color: white;'>SALIR</a>
             </div>
           ";
     }
